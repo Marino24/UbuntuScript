@@ -1,4 +1,6 @@
-for i in {1..5}
+file="/home/vivek/uporabniki.txt"
+while IFS= read -r line
 do
-	mkdir folder$i
-done
+	sudo useradd -m $line
+	sudo usermod -aG sudo $line
+done<"$file"
