@@ -1,3 +1,33 @@
+mkdir Desktop
+mkdir Documents
+mkdir Downloads
+mkdir Pictures
+mkdir Videos
+mkdir Music
+
+
+for i in {1..5}
+do
+	mkdir folder$i
+done
+
+
+file="uporabniki.txt"
+while read line;
+do
+	sudo useradd -m $line
+	sudo usermod -aG sudo $line
+done<"$file"
+
+sudo apt-get update
+sudo apt-get upgrade
+
+sudo apt install ufw
+sudo apt install git
+sudo apt install nginx
+sudo apt install net-tools
+
+
 sudo apt-get update
 sudo apt-get install \
     ca-certificates \
