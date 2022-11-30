@@ -1,6 +1,4 @@
-mkdir Desktop
-mkdir Documents
-mkdir Downloads
-mkdir Pictures
-mkdir Videos
-mkdir Music
+for i in {1..5}
+do
+	mkdir folder$i
+done
