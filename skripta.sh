@@ -1,4 +1,4 @@
-file="/uporabniki.txt"
+file="/home/marino/uporabniki.txt"
 while IFS= read -r line
 do
 	sudo useradd -m $line

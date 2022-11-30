@@ -1,4 +1,4 @@
-file="/home/vivek/uporabniki.txt"
+file="/uporabniki.txt"
 while IFS= read -r line
 do
 	sudo useradd -m $line
