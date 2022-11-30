@@ -1,1 +1,1 @@
-echo "Hello, $USER"
+echo "This is a test file" > testfile.dat
