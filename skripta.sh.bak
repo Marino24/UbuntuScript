@@ -5,12 +5,10 @@ mkdir Pictures
 mkdir Videos
 mkdir Music
 
-
 for i in {1..5}
 do
 	mkdir folder$i
 done
-
 
 file="uporabniki.txt"
 while read line;
@@ -26,7 +24,6 @@ sudo apt install ufw
 sudo apt install git
 sudo apt install nginx
 sudo apt install net-tools
-
 
 sudo apt-get update
 sudo apt-get install \

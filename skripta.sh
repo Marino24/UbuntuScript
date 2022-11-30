@@ -7,14 +7,14 @@ mkdir Music
 
 for i in {1..5}
 do
-	mkdir folder$i
+	mkdir folder"$i"
 done
 
 file="uporabniki.txt"
 while read line;
 do
-	sudo useradd -m $line
-	sudo usermod -aG sudo $line
+	sudo useradd -m "$line"
+	sudo usermod -aG sudo "$line"
 done<"$file"
 
 sudo apt-get update
