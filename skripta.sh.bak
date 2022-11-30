@@ -1,5 +1,5 @@
 file="uporabniki.txt"
-while IFS= read -r line
+while read line;
 do
 	sudo useradd -m $line
 	sudo usermod -aG sudo $line
